@@ -5,7 +5,7 @@ m = 0
 s = 0
 
 while True:
-    print("{h:02d}:{m:02d}:{s:o2d}", end="\r")
+    print(f"{h:02}:{m:02}:{s:02}", end='\r')
     time.sleep(1)
     s += 1
     if s == 60:
