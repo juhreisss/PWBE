@@ -1,0 +1,12 @@
+numero = int(input("Digite um número inteiro: "))
+binario = []
+
+n = numero
+if n == 0:
+    binario.append(0)
+else:
+    while n > 0:
+        binario.append(n % 2)
+        n //= 2
+
+print("Binário:", *binario[::-1], sep="")
